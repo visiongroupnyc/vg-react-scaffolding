@@ -1,0 +1,52 @@
+.toast {
+  visibility: hidden;
+  height: 60px;
+  margin: auto;
+  background-color: #FFF;
+  color: #111;
+  text-align: center;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 32px);
+  max-width: 450px;
+  position: fixed;
+  z-index: 100;
+  right: 16px;
+  bottom: -100px;
+  font-size: 17px;
+  white-space: nowrap;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.16);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.16);
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.16);
+  padding: 8px;
+}
+.toast_icon {
+  width: 30px;
+  height: 30px;
+}
+.toast_message{
+  color: #111;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12px;
+  margin-left: 8px;
+}
+.toast_active {
+  visibility: visible;
+  animation-name: fadein;
+  animation-duration: 5s;
+}
+
+@keyframes fadein {
+  0% {bottom: -100px; opacity: 0;}
+  20% {bottom: 30px; opacity: 1;}
+  30% {bottom: 30px; opacity: 1;}
+  40% {bottom: 30px; opacity: 1;}
+  50% {bottom: 30px; opacity: 1;}
+  60% {bottom: 30px; opacity: 1;}
+  70% {bottom: 30px; opacity: 1;}
+  80% {bottom: 30px; opacity: 1;}
+  90% {bottom: 30px; opacity: 1;}
+  0% {bottom: -100px; opacity: 0;}
+}
